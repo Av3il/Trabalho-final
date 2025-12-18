@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { ItemPedido } from "../../database/tables.js";
 import { redirect } from 'next/navigation';
 import DeleteButton from "../../componentes/DeleteButton";
