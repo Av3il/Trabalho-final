@@ -1,0 +1,131 @@
+/* Variáveis de Cores */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #28a745;
+  --background-light: #f4f7f9;
+  --text-dark: #2c3e50;
+  --radius-default: 8px;
+}
+
+/* 1. Container Principal */
+#home-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+/* 2. Header e Títulos */
+.home-header {
+  padding: 40px 0;
+}
+
+.main-title {
+  font-size: 3em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 1.3em;
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.section-title {
+  font-size: 2em;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+}
+
+/* 3. Linha Divisória */
+.divider {
+  width: 70%;
+  margin: 40px auto;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* 4. Seção de Destaques (Grid) */
+.highlights-section {
+  padding: 30px 20px;
+}
+
+.highlights-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.highlight-item {
+  flex: 1 1 200px;
+  font-size: 1.2em;
+  padding: 15px 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: var(--radius-default);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.highlight-item:hover {
+  background-color: #e9ecef;
+}
+
+/* 6. Call to Action (CTA) */
+.cta-container {
+  margin: 40px 0 60px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* 7. Responsividade para Telas Pequenas */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2em;
+  }
+
+  .slogan {
+    font-size: 1em;
+  }
+
+  .section-title {
+    font-size: 1.6em;
+  }
+
+  .highlights-grid {
+    gap: 15px;
+  }
+
+  .highlight-item {
+    font-size: 1.1em;
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-item {
+    flex: 1 1 100%;
+  }
+}

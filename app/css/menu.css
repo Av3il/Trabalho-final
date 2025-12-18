@@ -1,0 +1,61 @@
+/* Variáveis de Cores */
+:root {
+  --nav-bg: #1b3651;
+  --link-color: #f8f9fa;
+  --link-hover-bg: #132537;
+  --link-hover-text: #fff;
+}
+
+/* 1. Container Principal da Navegação */
+.main-nav {
+  background-color: var(--nav-bg);
+  padding: 0 20px;
+}
+
+/* 2. Lista de Links (UL) */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+}
+
+/* 3. Itens Individuais da Lista (LI) */
+.nav-list li {
+  margin: 0 5px;
+}
+
+/* 4. Estilo dos Links (A) */
+.nav-list a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--link-color);
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  border-radius: 4px;
+}
+
+/* 5. Efeito ao Passar o Mouse (Hover) */
+.nav-list a:hover {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-text);
+}
+
+/* 6. Responsividade */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+}
