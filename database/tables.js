@@ -76,6 +76,6 @@ Produto.belongsToMany(Categoria, { through: 'ProdutosCategorias', foreignKey: 'i
 Categoria.belongsToMany(Produto, { through: 'ProdutosCategorias', foreignKey: 'idCategoria', otherKey: 'idProduto' });
 
 //mysql.sync();
-mysql.sync({ alter: true });
+mysql.sync();
 
 export { Cliente, Produto, Pedido, ItemPedido, AvaliacaoProduto, Categoria, mysql};
