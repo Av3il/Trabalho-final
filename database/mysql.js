@@ -4,7 +4,7 @@ import pg from "pg";
 
 const mysql = new Sequelize({
     dialect: 'postgres',
-    dialectModule: pg,
+    dialectModule: 'pg',
     host: 'localhost',
     port: '5432',
     database: 'alfredo_n4l9',
